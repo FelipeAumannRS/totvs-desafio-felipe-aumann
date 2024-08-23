@@ -1,8 +1,8 @@
-CREATE TABLE conta (
-    id              BIGINT AUTO_INCREMENT PRIMARY KEY,
-    data_vencimento DATE           NOT NULL,
+CREATE TABLE conta(
+    id              BIGSERIAL PRIMARY KEY,
+    data_vencimento DATE,
     data_pagamento  DATE,
-    valor           DECIMAL(19, 2) NOT NULL,
+    valor           DECIMAL(19, 2),
     descricao       VARCHAR(255),
-    situacao        VARCHAR(50)    NOT NULL
+    situacao        VARCHAR(50)
 );
